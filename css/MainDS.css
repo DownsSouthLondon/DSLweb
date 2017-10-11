@@ -1,0 +1,363 @@
+﻿.testing{width:270px; height:262px;position: relative; top: 0px; left: -10px; }
+.testingrow {display: block; height: 50px;}
+.testingitem{float: left; width: 50px; height:100%; border: 1px solid black; background:url('../images/VideoImages/Video15050.jpg') center center no-repeat;}
+.videoholder{height:0px; width:0px;}
+.videoisit{transition: height 0.4s, width 0.4s; -webkit-transition: height 0.4s, width 0.4s;}
+.videomain{border: 1px solid black;}
+
+
+/*Master*/
+body, html {width: 100%; font-family: "Myriad Web Pro", Helvetica, sans-serif; background: #fffaf0; zoom: 0.9; }
+.pagecontainer{margin:0 auto; padding: 0px; width: 1150px;}
+.pagecontainer2{margin:0 auto; padding: 0px; width: 960px; }
+.topbar{position:relative; background: #fffaf0; height: 155px; width: 1150px; margin:auto; border: 0px solid white; padding:0px 0px 0px 0px;}
+.logocontainer {position: absolute; top: 20px; left: 0%; background: #fffaf0; height: 104px; width: 300px; z-index: 3; padding-left: 5px; padding-right: 5px;}
+/*.logocontainerinner {position: relative; top: 0px;left: 0px;height: 104px;width: 300px; background:url('../images/DSLLogoColour2.jpg') center center no-repeat;}*/
+.logocontainerinner {position: relative; top: 0px;left: 14px;height: 103px;width: 304px; background:url('../images/Final DS logo.jpg') center center no-repeat;}
+.Mission{position: absolute; top: 107px;left: 350px; height: 20px; width: 600px; color: #8c5c30; font-size:20px; font-weight:600;}
+.donatecontainer{position:absolute; top: 40px; right:1.0%; background: #c2e189; height: 52px; width: 160px; border-radius: 25px;}
+.donate{position:absolute; top:10px; left: 21px; background: #c2e189; color:#FFFAF0; font-weight:bold; font-size:29px;}
+.donate:hover{color:#333333;}
+/*.emailContainer {position: absolute; top: 105px; right: 35%;background: white; height: 20px; width: 200px;}*/
+/*.registercontactcontainer{position:absolute; right:26%; height: 40px; width: 120px; color:#DFDFDF; }
+.formrowregister{display: block; height: 100%; width: 180px;}
+.formleftregister{float: left; width: 17%; height: 74%; top: 40%; padding: 27px 0px 0px 0px; background:url('../images/mailblack.png') center center no-repeat; text-align:center;}
+.formrightregister{margin-left:17%; padding: 20px 0px 0px 0px;}
+.formrightregister:hover{color:white;}*/
+.menu{top: 75px; background: #FFC27B; height: 62px; width: 100%; border: 0px solid #133aac; display: block; }
+.menuInner{position:relative; margin:auto; width: 1220px; height:55px; font-size:20px;}
+.header{position:relative; background: #fffaf0; height: 40px; width: 1110px; top:5px; margin:auto; border-bottom: 8px solid #c8e379;}
+
+
+.footer{bottom: 90px;  background: #c8e379; height: 40px; width: 100%; }
+.footer1{bottom: 70px;  background: #0066FF; height: 13px; width: 100%; }
+.footer2{bottom: 0px;  background: #c8e379; height: 50px; width: 100%; }
+.footer3{bottom: 0px;  background: #C0C0C0; height: 100px; width: 100%; }
+.footer4{bottom: 0px;  background: #c8e379; height: 60px; width: 100%; border-top-style:solid; border-top-width:0px; border-top-color:#DFDFDF; }
+.footer5{bottom: 0px;  background: #C0C0C0; height: 47px; width: 100%; }
+.footer6{bottom: 0px;  background: black; height: 70px; width: 153px; left:40%; position: relative;}
+.footer7{bottom: 0px;  background: #C0C0C0; height: 3px; width: 100%; }
+.Footertablecontainer {top:15px; margin-left: auto; margin-right: auto; width:880px; padding-top:5px;}
+.FooterLinks{text-decoration:none; color:#8c5c30; font-size:19px; font-weight:600;height:5px; }
+.FooterTable{width:125px;height:5px;}
+.FooterTableSmall{width:70px;height:5px;}
+.FooterTableMedium{width:90px;height:5px;}
+.FooterTableBig{width:110px;height:5px;}
+.FooterTableVeryBig{width:170px;height:5px;}
+.FooterLinks:hover{color:white;}
+.RegisteredCharity{color:#8c5c30; font-size:16px; margin-left: auto; margin-right: auto; width: 650px; height: 50px; padding-top:15px;}
+.RegisteredAddress{color:#8c5c30; font-size:14px; margin-left: auto; margin-right: auto; width: 250px; height: 50px; padding-top:15px;}
+.SponsorBlock {height:100%;width:100%; display: block;}
+.SponsorItem{float: left; height:100%; width: 153px; box-shadow: 2px 2px 1px black;}
+
+.rainbowparentcontainer {position:absolute; left:4.5%; height: 40px; width: 400px; }
+.rainbowchildcontainer {position:absolute; top:21px; }
+.rainbowcontainer {display: block; float: left; font-size:3px;}
+.rainbow1 {background:red; color:red; float: left; width:3px;}
+.rainbow2 {background:blue; color:blue; float: left; width:3px;}
+.rainbow3 {background:yellow; color:yellow; float: left; width:3px;}
+.rainbow4 {background:green; color:green; float: left; width:3px;}
+.rainbow5 {background:orange; color:orange; float: left; width:3px;}
+.rainbow6 {background:purple; color:purple; float: left; width:3px;}
+
+/*Home*/
+.MissionStatementContainer{position: relative; left: 20px; color: #8c5c30;}
+.MissionStatementHeader{position: relative; font-size:37px; text-align:left; font-weight:800; color: #4166F5; height: 50px; width:640px; left: 20px;}
+.MissionStatement{position: relative; font-size:32px; text-align:left; font-weight:800; color: #4166F5; 
+                    height: 50px; width:600px; left:40px; top:15px; background:#fffaf0; padding: 0px 0px 0px 0px;}
+.leftmenu{position: relative; top: 25px; left:-10px; height: 1270px; border: 0px solid white; padding:13px 13px 13px 13px;background-color: #ffffcc;}
+.whatsnew{position: relative; top: 25px; left:1px; background: #0066FF; height: 25px; width: 217px; color:white; 
+            font-size:18px; border: 0px solid black; padding:11px 10px 10px 20px;}
+.main{top: 0px; background: #fffaf0; height: 1350px; width: 670px; border: 0px solid white;}
+.slidercontainer{position: relative; top: 0px; left: 0px; }
+
+.maininnertop{position: relative; top: 20px; left: 0px; background: #fffaf0; height: 270px; width: 260px; border: 1px solid white; padding:5px 5px 5px 5px;}
+.maininnerlower{position: relative; top: 0px; left: -6px; background: #fffaf0; height: 230px; width: 680px; border: 1px solid white; padding:5px 5px 5px 5px;}
+
+.maininnerboxleft{position: relative; top: 0px; left:25px;float: left; background: #fffaf0; height: 270px; width: 250px; border: 0px solid black; overflow:hidden; }
+.maininnerlowerleft{position:absolute; height: 17px; width: 92%; bottom: 0px; left: 0px; background: #c8e379; color:white; font-size:13px;
+              opacity:0.7; filter:alpha(opacity=70); overflow:hidden; transition: height 0.2s; -webkit-transition: height 0.2s; padding:10px 10px 10px 10px;}
+.maininnerlowerleft:hover{opacity:0.9; filter:alpha(opacity=90); height: 250px; color:white; }
+
+.maininnerboxright{position: relative; top: 30px; right: 10px;float: left; background: white; height: 280px; width: 240px; border: 0px solid black; overflow:hidden; }
+.maininnerlowerright{position:absolute; height: 17px; width: 98%; bottom: 0px; left: 0px; background: #0066FF; color:white; font-size:13px;
+              opacity:0.7; filter:alpha(opacity=70); overflow:hidden; transition: height 0.2s; -webkit-transition: height 0.2s; padding:10px 10px 10px 10px;}
+.maininnerlowerright:hover{opacity:0.9; filter:alpha(opacity=90); height: 230px; color:white; }
+
+.newsheader{font-size:25px; text-align:left; font-weight:900; color: #595959; padding-left:0px } 
+.newsbox{position: relative; top: 0px; right: 5px; float: left; background: #fffaf0; height: 268px; width: 310px; border: 0px solid black; overflow:hidden; 
+            font-size: 18px;  }
+.news{width:100%; height: 80px; vertical-align:central; }
+.news:hover{ color:#4166F5; -webkit-transition: background-color 2s; transition: background-color 2s; opacity:0.9;}
+.justGivingText{position: relative; top: 0px; left: 25px; float: left; background: #fffaf0; height: 400px; width: 240px; border: 0px solid black; overflow:hidden; 
+            font-size: 18px;  }
+.justGivingText:hover{ color:#4166F5; -webkit-transition: background-color 2s; transition: background-color 2s; opacity:0.9;}
+
+.DSLcompanydescriptionHeader{font-size:25px; text-align:left; font-weight:900; top:0px; }
+.DSLcompanydescription{padding:15px 15px 15px 5px; font-size:18px; color: #595959; text-align:left; width:365px; height:310px; top:0px;}
+.signsHeader{font-size:25px; text-align:left; font-weight:900; color: #595959;} 
+.signs{position: relative;  padding:0px 0px 0px 0px; font-size:18px; color: #595959; text-align:left; width:295px; top: 22px; left: 30px;}
+.bottomNewsBlock{position: relative;  padding:0px 0px 0px 0px; font-size:18px; color: #595959; text-align:left; width:295px; top: 0px; left: 0px;}
+.MainPageLower{position: relative; padding:20px 20px 35px 28px;  top: -30px; height: 100px; width: 600px; background-color: #fffaf0; font-size:18px; font-family:"Myriad Web Pro", Helvetica, sans-serif;}
+.mainPageDivider {width:620px; height:5px; background-color:#fffaf0; left: 20px; position:relative;}
+
+
+/*General*/
+.linkText a{text-decoration: none; color: #8c5c30;}
+.linkText a:hover {text-decoration: none; color:#4166F5;}
+.textwrap {float:right; margin-right: 30px; margin-left: 10px; }
+.textwrapleft {float:left; margin: 10px; }
+.formrow{display: block; }
+.formleft{float: left; width: 290px; }
+.formright{margin-left:310px;}
+.formleftTextBlock{float: left; width: 580px;}
+.formrightTextBlock{margin-left:600px;}
+.formleftTrustee{float: left; width: 300px;}
+.formrightTrustee{margin-left:305px;}
+
+.formleftNewsBlock{float: left; width: 88%; height: 70px; vertical-align:central; padding:5px 5px 5px 10px; }
+.formrightNewsBlock{margin-left:90%; width: 10%; height: 70px; background:url('../images/ArrowSmall.png') center center no-repeat; text-align:center;}
+
+.formrowmain{display: block; height: 320px; }
+.formrowmainBottom{display: block; height: 370px; }
+.formleftmain{float: left; width: 360px; background-color: #fffaf0;}
+.formrightmain{margin-left:370px;}
+.formleftmainlower{float: left; width: 320px; background-color: #fffaf0;}
+.formrightmainlower{margin-left:330px; background-color: #fffaf0;}
+.formleftmainBottom{float: left; width: 360px; }
+.formrightmainBottom{margin-left:360px; background-color: #ECECEC;}
+
+.formleftChild{float: left; width: 320px; }
+.formrightChild{margin-left:40%;}
+.formleftChildNews{float: left; width: 59%; }
+.formrightChildNews{margin-left:40%; height: 738px;}
+.formrightChildNewsLower{margin-left:40%; height: 452px;}
+
+.formleftfooter{float: left; width: 50%;}
+.formrightfooter{margin-left:50%;}
+.clear{clear: both; }  
+.left{float: left; width: 21%;}  
+.right {float: left; width: 79%;}    
+.bold{font-size:11px; font-weight:900;}
+.StandardText{font-size:16px; font-family:"Myriad Web Pro", Helvetica, sans-serif; color:#8c5c30;}
+.IndentSmall{text-indent:50px;}
+.IndentMedium{text-indent:150px;}
+.IndentLarge{text-indent:250px;}
+.HyperLink{text-decoration:none;}
+.HyperLinkText {background: #0000FF; color:white; font-size:13px;}
+.rowpadding{height:20px;}
+.rowpaddingsmall{height:13px;}
+
+/*Menu*/
+nav {z-index: 2; position: relative; left: -25px; top: -18px; height:60px;}
+nav ul ul {display: none;}
+nav ul li:hover > ul {display: block;}
+nav ul {
+	background: #FFC27B; 
+	list-style: none;
+	position: relative;
+	display: inline-table;
+    height:100%;
+}
+nav ul:after {content: ""; clear: both; display: block;}
+nav ul li {float: left; border-right-style:solid; border-right-width:1px; border-right-color: #fffaf0; height:100%; padding-top:0px; color:#fffaf0;}
+nav ul li:hover {
+		background: #333333;
+		background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);}
+nav ul li:hover a {color: #fff;}	
+nav ul li a {
+		display: block; 
+        padding: 9px 13.5px;
+        color: #FFFAF0;
+        text-decoration: none;
+        height:100%;
+        font-weight:600;
+        font-size:19px;
+}
+nav ul ul {
+	background: #333333;
+    border-radius: 0px; padding: 0;
+	position: absolute; top: 100%; height: 40px;}
+nav ul ul li {
+		float: none; 
+		border-top: 0px solid #6b727c;
+		border-bottom: 0px solid #575f6a;
+		position: relative; height: 40px;}
+nav ul ul li a {color: #fff; height: 40px;}	
+nav ul ul li a:hover {background: #133aac;}
+nav ul ul ul {position: absolute; left: 100%; top:0; height: 40px;}
+
+/*Signs Challenge*/
+.signsContainer{width:540px; height:216px; position: relative; top: 0px; left: 15px; }
+.signsContainerSmall{width:270px; height:262px;position: relative; top: 0px; left: -10px;  }
+.signsRow {display: block; height: 50px;}
+.signsItem{float: left; width: 50px; height:50px; border: 1px solid white; background:url('../images/VideoImages/1.jpg') center center no-repeat;
+           -webkit-transition: background-image 0.2s ease-in-out;
+            -moz-transition: background-image 0.2s ease-in-out;
+            -ms-transition: background-image 0.2s ease-in-out;
+            -o-transition: background-image 0.2s ease-in-out;
+            transition: background-image 0.2s ease-in-out;}
+.signsItem:hover{opacity:0.5;}
+.videoContainer{width:310px; height:540px; position: relative; left: 130px; top: 0px; background-color:#c8e379; }
+.videoholder{position:absolute; Top:20px; width:250px; height:500px; left:30PX;}
+
+/*Others*/
+.PlaceHolder {height: 900px; width: 640px; top: 40px;left: 0px; position:relative;}
+.TopPhotoWide{height: 280px; width: 580px; border-color: none; border-width:0px; Top:15px; left:35px; position:relative;}
+.PhotOverlayText {top: 10%; left: 5%; color: ghostwhite; font-size:32px; text-align:left; font-weight:900; position:relative;}
+.PhotOverlayTextGrey {top: 10%; left: 5%; color: darkgray; font-size:32px; text-align:left; font-weight:900; position:relative;}
+.PhotOverlayTextBlue {top: 10%; left: 5%; color: #4166F5; font-size:32px; text-align:left; font-weight:900; position:relative;}
+.HeaderText{font-size:20px; text-align:left; font-weight:600; top:0px; background: #ffffcc; color:#8c5c30; padding: 5px 5px 5px 8px; position: relative; left:-5px;}
+.SubHeaderTextLarge{font-size:19px; text-align:left; font-weight:600; top:0px; color: #8c5c30; }
+.SubHeaderTextSmall{font-size:17px; text-align:left; font-weight:500; top:0px; color: #4166F5; }
+.SubHeaderTextSmallItalic{font-size:17px; text-align:left; font-weight:500; top:0px; color: black; font-style: italic; }
+.BodyText{text-align:left; top:0px; width: 580px; left:40px; position:relative; font-size:19px;}
+.TrusteeText{font-size:17px; text-align:left; font-weight:500; top:0px; }
+
+.TestimonialBox{position:relative; height: 350px; width: 210px; top: 0px; left:18px; font-size:18px; color: #8c5c30; background: #FFC27B; padding:30px 20px 30px 20px; 
+                    text-align:center; font-style:italic; }
+.DonationBox{position:relative; height: 120px; width: 210px; top: 0px; left:18px;   font-size:26px; color: #8c5c30; background: #FFC27B; 
+             padding:30px 20px 30px 20px; text-align:center; vertical-align:middle; }
+.leftPageDivider {position:relative; top: 10px; left:18px; font-size:20px; text-align:left; font-weight:600; background: #c8e379; color:#8c5c30; padding: 8px 5px 8px 5px; width: 240px;}
+.leftPageDivider2{position:relative; top: 10px; background-color: #ffffcc; height: 10px; width: 250px; margin:auto; border-bottom: 0px solid #C0C0C0; }
+.friendsOfDSLContainer{position:relative; top: 15px; left:18px;  height:370px; width:247px; border: 0px solid lightgrey; background-color: #ffffcc; }
+.friendsOfDSLItem{position:relative; top: 0px; height:50px; width:100%; border: 1px solid lightgrey; padding: 10px 0px 10px 0px; -webkit-background-size: cover;
+        -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.friendsOfDSLItemThin{position:relative; top: 0px; height:50px; width:100%; border: 1px solid lightgrey; padding: 0px 0px 0px 0px; -webkit-background-size: contain;
+        -moz-background-size: contain; -o-background-size: contain; background-size: contain;}
+.friendsOfDSLItemThick{position:relative; top: 0px; height:80px; width:100%; border: 1px solid lightgrey; padding: 0px 0px 0px 0px; -webkit-background-size: contain;
+        -moz-background-size: contain; -o-background-size: contain; background-size: contain;}
+.leftPageDivider3{position:relative; background-color: #ffffcc; height: 7px; width: 250px; margin:auto; }
+.leftPageDivider4{position:absolute; top: 1375px; background: #fffaf0; height: 10px; width: 250px; margin:auto; border-bottom: 8px solid #C0C0C0; }
+.facebookcontainer{position:relative; height: 75px; width: 250px; top: 80px; left:18px; background: #fffaf0; }
+
+.DonationBoxSmall{position:absolute; height: 130px; width: 210px; top: 490px; left:15px; font-size:22px; color: ghostwhite; background: #666666; 
+             padding:30px 20px 30px 20px; text-align:center; vertical-align:middle; box-shadow: 10px 10px 5px #888888;}
+.DonationBoxLarge{position:absolute; height: 140px; width: 210px; top: 490px; left:15px; font-size:26px; color: ghostwhite; background: #666666; 
+             padding:30px 20px 30px 20px; text-align:center; vertical-align:middle; box-shadow: 10px 10px 5px #888888;}
+.justGivingContainer{position:relative; left:20px; height:400px;}
+
+
+
+
+
+
+.SponsorContainer{position:absolute; height:356px; width:248px; top: 950px; left:15px; box-shadow: 10px 10px 5px #888888; border: 1px solid lightgrey;}
+
+
+
+
+
+
+
+
+
+.PagesRightPhoto{height: 200px; width: 190px; border-color: black; border-width:5px; position:relative; left:130px;}
+.PagesRightPhotoLower{position:absolute; height: 15px; width: 94%; bottom: 0px; left: 0px; background: #c8e379; color:white; font-size:14px;
+              opacity:0.7; filter:alpha(opacity=70); padding:5px 5px 5px 5px; text-align:center;}
+.PagesCentrePhoto{height: 175px; width: 350px; border-color: black; border-width:5px; position:relative; left:130px;}
+.PagesCentrePhotoLower{position:absolute; height: 15px; width: 97%; bottom: 0px; left: 0px; background: #c8e379; color:white; font-size:14px;
+              opacity:0.7; filter:alpha(opacity=70); padding:5px 5px 5px 5px; text-align:center;}
+
+/*Signs*/
+.signsAbout{top: 0px; background: #fffaf0; height: 1785px; width: 670px; border: 0px solid white;}
+.SignsTextHolder {top: 100px; left: 100px; position:relative; height:150px; width:800px;}
+.SignsCenteredPhoto{top:220px; left:350px; height: 260px; width: 260px; border-color: black; border-width:5px; position:relative;}
+
+/*Donate*/
+.DonateHeaderTextHolder {top: 100px; left: 100px; position:relative; height:150px; width:800px;}
+.DonateCenteredPhoto{top:220px; left:350px; height: 260px; width: 260px; border-color: black; border-width:5px; position:relative;}
+
+/*Donate*/
+.GivingTimeHeaderTextHolder {top: 70px; left: 100px; position:relative; height:250px; width:800px;}
+.GivingTimeCenteredPhoto{top:10px; left:350px; height: 260px; width: 260px; border-color: black; border-width:5px; position:relative;}
+
+/*Celebrate*/
+.CelebratePlaceHolder {height: 800px;top: 0px;left: 0px;background-color:ghostwhite;}
+.CelebrateHeaderTextHolder {top: 40px; left: 100px; position:relative; height:800px; width:800px;}
+.CelebrateCenteredVideo{top:10px; left:150px; height: 250px; width: 360px; border-color: black; border-width:5px; position:relative;}
+
+/*About*/
+.mainAbout{top: 0px; background: #fffaf0; height: 1350px; width: 670px; border: 0px solid white;}
+.AboutDSLHeaderTextHolder {top: 40px; left: 0px; position:relative; height:250px; width:550px;}
+.AboutDSLRightPhoto{height: 200px; width: 190px; border-color: black; border-width:5px; position:relative; left:130px;}
+.AboutDSLRightPhotoLower{position:absolute; height: 15px; width: 92%; bottom: 0px; left: 0px; background: #0066FF; color:white; font-size:14px;
+              opacity:0.7; filter:alpha(opacity=70); padding:5px 5px 5px 5px; text-align:center;}
+
+/*Accounts*/ 
+.mainAccounts{top: 0px; background: #fffaf0; height: 1350px; width: 670px; border: 0px solid white;}
+.AccountsHeaderTextHolder {top: 70px; left: 100px; position:relative; height:250px; width:800px;}
+.AccountsCenteredPhoto{top:10px; left:350px; height: 260px; width: 260px; border-color: black; border-width:5px; position:relative;}
+
+/*Who We Are*/
+.mainWhoWeAre{top: 0px; background: #fffaf0; height: 1350px; width: 670px; border: 0px solid white;}
+.WhoWeArePlaceHolder {height: 700px;top: 0px;left: 0px;background-color:ghostwhite;}
+.WhoWeAreHeaderTextHolder {top: 50px; left: 100px; position:relative; height:800px; width:800px;}
+.WhoWeAreCenteredVideo{top:20px; left:150px; height: 260px; width: 400px; border-color: black; border-width:5px; position:relative;}
+
+/*What we do*/
+.mainWhatWeDo{top: 0px; background: #fffaf0; height: 2470px; width: 670px; border: 0px solid white;}
+.WhatWeDoPlaceHolder {height: 800px;top: 0px;left: 0px;background-color:ghostwhite;}
+.WhatWeDoHeaderTextHolder {top: 40px; left: 100px; position:relative; height:950px; width:800px;}
+.WhatWeDoCenteredPhoto{top:50px; left:250px; height: 260px; width: 260px; border-color: black; border-width:5px; position:relative;}
+
+/*Therapy*/
+.TherapyPlaceHolder {height: 850px;top: 0px;left: 0px;background-color:ghostwhite;}
+.TherapyHeaderTextHolder {top: 40px; left: 100px; position:relative; height:950px; width:800px;}
+.TherapyCenteredVideo{top:20px; left:100px; height: 560px; width: 300px; border-color: black; border-width:5px; position:relative;}
+
+/*Publications*/
+.PublicationsPlaceHolder {height: 3600px;top: 0px;left: 0px; background-color:ghostwhite;}
+.PublicationsHeaderTextHolder {top: 40px; left: 100px; position:relative; height:150px; width:800px;}
+.PublicationsCenteredPhoto{top:50px; left:300px; height: 260px; width: 260px; border-color: black; border-width:5px; position:relative;}
+
+/*How You Can Help*/
+.mainHowYouCanHelp{top: 0px; background: #fffaf0; height: 1480px; width: 670px; border: 0px solid white;}
+.HowYouCanHelpPlaceHolder {height: 700px;top: 0px;left: 0px;background-color:ghostwhite;}
+.HowYouCanHelpHeaderTextHolder {top: 70px; left: 100px; position:relative; height:700px; width:800px;}
+.HowYouCanHelpCenteredVideo{top:20px; left:150px; height: 260px; width: 400px; border-color: black; border-width:5px; position:relative;}
+
+/*Giving Time*/
+.GivingTimePlaceHolder {height: 750px;top: 0px;left: 0px;background-color:ghostwhite;}
+.GivingTimeHeaderTextHolder {top: 70px; left: 100px; position:relative; height:800px; width:800px;}
+.GivingTimeCenteredVideo{top:20px; left:150px; height: 260px; width: 400px; border-color: black; border-width:5px; position:relative;}
+
+/*Giving Money*/
+.GivingMoneyPlaceHolder {height: 700px;top: 0px;left: 0px;background-color:ghostwhite;}
+.GivingMoneyHeaderTextHolder {top: 70px; left: 100px; position:relative; height:800px; width:800px;}
+.GivingMoneyCenteredVideo{top:20px; left:150px; height: 260px; width: 400px; border-color: black; border-width:5px; position:relative;}
+
+/*Our Community*/
+.OurCommunityPlaceHolder {height: 800px;top: 0px;left: 0px;background-color:ghostwhite;}
+.OurCommunityHeaderTextHolder {top: 30px; left: 100px; position:relative; height:800px; width:800px;}
+.OurCommunityCenteredVideo{top:20px; left:150px; height: 260px; width: 400px; border-color: black; border-width:5px; position:relative;}
+
+/*People We Help*/
+.PeopleWeHelpPlaceHolder {height: 800px;top: 0px;left: 0px;background-color:ghostwhite;}
+.PeopleWeHelpHeaderTextHolder {top: 30px; left: 100px; position:relative; height:800px; width:800px;}
+.PeopleWeHelpCenteredVideo{top:20px; left:150px; height: 260px; width: 400px; border-color: black; border-width:5px; position:relative;}
+
+/*Testimonials*/
+.TestimonialsPlaceHolder {height: 700px;top: 0px;left: 0px;background-color:ghostwhite;}
+.TestimonialsHeaderTextHolder {top: 50px; left: 100px; position:relative; height:800px; width:800px;}
+.TestimonialsCenteredVideo{top:20px; left:150px; height: 260px; width: 400px; border-color: black; border-width:5px; position:relative;}
+
+/*Resources*/
+.mainResources{top: 0px; background: #fffaf0; height: 4100px; width: 670px; border: 0px solid white;}
+.ResourcesPlaceHolder {height: 700px;top: 0px;left: 0px;background-color:ghostwhite;}
+.ResourcesHeaderTextHolder {top: 50px; left: 100px; position:relative; height:800px; width:800px;}
+.ResourcesCenteredVideo{top:20px; left:150px; height: 260px; width: 400px; border-color: black; border-width:5px; position:relative;}
+
+/*News*/
+.mainNews{top: 0px; background: #fffaf0; height: 3770px; width: 670px; border: 0px solid white;}
+.NewsPlaceHolder {height: 1300px;top: 0px;left: 0px;background-color:ghostwhite;}
+.NewsHeaderTextHolder {top: 50px; left: 100px; position:relative; height:800px; width:800px;}
+.NewsCenteredVideo{top:20px; left:150px; height: 260px; width: 400px; border-color: black; border-width:5px; position:relative;}
+
+/*Contact Us*/
+.mainContactUs{top: 0px; background: #fffaf0; height: 1350px; width: 670px; border: 0px solid white;}
+.ContactUsPlaceHolder {height: 700px;top: 0px;left: 0px;background-color:ghostwhite;}
+.ContactUsHeaderTextHolder {top: 50px; left: 100px; position:relative; height:800px; width:800px;}
+.ContactUsCenteredVideo{top:20px; left:150px; height: 260px; width: 400px; border-color: black; border-width:5px; position:relative;}

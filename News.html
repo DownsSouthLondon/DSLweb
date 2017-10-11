@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://www.downssouthlondon.org/News -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./News_files/MainDS.css" rel="stylesheet" type="text/css"><link href="./News_files/js-image-slider.css" rel="stylesheet" type="text/css">
+
+
+    <script id="facebook-jssdk" src="./News_files/all.js"></script><script src="./News_files/jquery-1.10.2.js"></script>
+    <script src="./News_files/jquery-1.10.2.min.js"></script>
+    <script src="./News_files/js-image-slider.js" type="text/javascript"></script>
+    <script src="./News_files/MainDS.js" type="text/javascript"></script>
+
+    <script src="./News_files/jquery.js"></script>
+    <script src="./News_files/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="./News_files/mediaelementplayer.css">
+    <script src="./News_files/custom.js"></script>
+
+
+    <title>
+	DSL
+</title>
+
+    <style type="text/css" media="screen"> </style>
+    <script type="text/javascript" src="./News_files/jquery-1.10.2.js"> </script>
+    <script type="text/javascript">
+        //function EditRecord(CRID) {
+        //    window.location = "editCR.aspx?ID=" + CRID
+        //}
+        $(document).ready(function () {
+            //$('#loading').hide();
+            //$('#loadingImg').hide();
+            //$('#bodyx').show();
+            //LoadDataThroughAjaxCall();
+            TimerTick();
+        });
+        function LoadDataThroughAjaxCall() {
+            $('#CRInfo').hide();
+            $('#loadingImg').show();
+            $.ajax({
+                type: "POST",
+                url: "Main.aspx/GetCRSummaryData",
+                data: '{}',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: OnSuccess,
+                failure: OnFailure,
+                error: OnError
+            });
+            $('#CRInfo').show();
+            $('#loadingImg').hide();
+            return false;
+        }
+        function OnSuccess(msg) {
+            var message = msg.d;
+            document.getElementById("CRInfo").innerHTML = message
+        }
+        function OnFailure(response) {
+            alert('Failure!!!' + '<br/>' + response.reponseText);
+        }
+        function OnError(response) {
+            var errorText = response.responseText;
+            alert('Error!!!' + '\n\n' + errorText);
+        }
+        function CloseMe() {
+            window.open('', '_self', '');
+            window.close();
+        }
+     </script>
+     <script type="text/javascript">
+         var timerInterval = 10000; // 1 second
+         var currentCount = 20000;
+         var timerobj = 0;
+         function TimerTick() {
+             if (currentCount == 0) {
+                 //RotateImages();
+                 RotateText();
+                 currentCount = 20000;
+             }
+             else {
+                 currentCount = currentCount - timerInterval;
+                 if (currentCount < 0)
+                     currentCount = 0;
+             };
+             //document.getElementById("CRInfo").innerHTML = "Job information will auto refresh in " + currentCount.toString() + " seconds.";
+             timerobj = setTimeout("TimerTick()", timerInterval);
+         }
+    </script>
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+<body style="" class=" hasGoogleVoiceExt">
+    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./News_files/Z2duorNoYeF.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./News_files/Z2duorNoYeF(1).html" style="border: none;"></iframe></div></div></div>
+    <form method="post" action="http://www.downssouthlondon.org/News" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="M5crxZqZ2oW6mE87swMZipYndIoP+XaBG1bS9WBcjJoGDTxKZJ4Co1BLgb/CQU6wHjQq/v5E7d6Ua1P0Xfu9WVW83THuVsjvA9JFuOV6Wmw=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA8C29DA">
+</div>
+
+            <div class="topbar">
+                <div class="clear"></div>
+                <div class="logocontainer">
+                    <div class="logocontainerinner"> </div>
+                </div> 
+                <div class="Mission">
+                    Helping children with Down’s Syndrome develop vital life-skills 
+                </div>                   
+                <div class="donatecontainer">
+                    <div class="donate">DONATE</div>
+                    <a href="https://www.justgiving.com/downssouthlondon/" class="HyperLink"><div class="donate">DONATE</div></a>
+                </div>
+                
+            </div> 
+            <div class="menu">
+                <div class="menuInner">
+                    <nav>
+                        <ul>                            
+                            <li>
+                                <a href="http://www.downssouthlondon.org/Default.aspx">&nbsp; &nbsp; Home</a>
+                            </li>
+                            <li>
+                                <a href="http://www.downssouthlondon.org/AboutDSL.aspx">About DSL</a>
+                            </li>
+                            <li>
+                                <a href="http://www.downssouthlondon.org/News.aspx">News</a>
+                            </li>
+                            <li>
+                                <a href="http://www.downssouthlondon.org/WhatWeDo.aspx">What we do</a>
+                            </li>
+                            <li>
+                                <a href="http://www.downssouthlondon.org/WhoWeAre.aspx">Who we are</a>
+                            </li>
+                            <li>
+                                <a href="http://www.downssouthlondon.org/HowYouCanHelp.aspx">How you can help</a>
+                            </li>
+                            <li>
+                                <a href="http://www.downssouthlondon.org/Resources.aspx">Further Reading</a>
+                            </li>
+                            <li><a href="http://www.downssouthlondon.org/Accountability.aspx">Accountability</a></li>
+                            <li><a href="http://www.downssouthlondon.org/ContactUs.aspx">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> 
+        <div class="header"></div>
+        <div class="pagecontainer" style="width: 1150px">
+            <div class="clear"></div>   
+                
+        <div class="formrow">
+        <div class="leftmenu formleft">
+                <div class="rowpadding"></div>
+                <div class="DonationBox" id="DonateBox">£20 buys 'My First Makaton Symbols &amp; Signs' set for a family.</div>
+                <div class="rowpadding"></div>
+                <div class="rowpadding"></div>
+                <div class="TestimonialBox" id="TestimonialBox">
+                    Along with all the medical complications, Down's syndrome makes it much harder for children like my son to do the basic things like walking and talking.  
+                    In addition, he is also deaf.  I was feeling pretty desperate about his future until we joined DSL... 
+                    <br>
+                    <br>  
+                    9 months later and my son is now crawling and making his first attempts at speaking.
+                    <br>
+                    <br>  
+                    Mel Rosenvinge
+                </div>
+                <div class="rowpadding"></div>
+                <div class="leftPageDivider">&nbsp; Friends of DSL</div>
+                <div class="leftPageDivider2"></div>
+                <div class="friendsOfDSLContainer">
+                    <div class="friendsOfDSLItem" style="background-image: url(&#39;../images/Sponsors/Daiwa.png&#39;)"></div>
+                    <div class="leftPageDivider3"></div>
+                    <div class="friendsOfDSLItemThin" style="background-image: url(&#39;../images/Sponsors/Lyceum.png&#39;)"></div>
+                    <div class="leftPageDivider3"></div>
+                    <div class="friendsOfDSLItem" style="background-image: url(&#39;../images/Sponsors/lloyds.png&#39;)"></div>
+                    <div class="leftPageDivider3"></div>
+                    <div class="friendsOfDSLItemThin" style="background-image: url(&#39;../images/Sponsors/Chelsea2.png&#39;)"></div>
+                    <div class="leftPageDivider3"></div>
+                    <div class="friendsOfDSLItemThin" style="background-image: url(&#39;../images/Sponsors/Rothschild.png&#39;)"></div>
+                </div>
+                <div class="leftPageDivider2"></div>
+                <div class="facebookcontainer">
+                    <div class="fb-like-box fb_iframe_widget" data-href="http://www.facebook.com/pages/DSLsignschallenge/128859583985850" data-width="250" data-height="100" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;color_scheme=light&amp;container_width=249&amp;header=true&amp;height=100&amp;href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FDSLsignschallenge%2F128859583985850&amp;locale=en_GB&amp;sdk=joey&amp;show_border=true&amp;show_faces=true&amp;stream=false&amp;width=250"><span style="vertical-align: bottom; width: 250px; height: 100px;"><iframe name="f335cc696f335f4" width="250px" height="100px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="./News_files/like_box.html" style="border: none; visibility: visible; width: 250px; height: 100px;" class=""></iframe></span></div>  
+                </div>
+            </div>
+        </div>
+        <div class="mainNews formright">
+            <div class="PlaceHolder">
+                <div class="TopPhotoWide" style="background-image: url(&#39;../Photos/Pages/5.jpg&#39;)">
+                    <div class="PhotOverlayText">
+                        News...
+                    </div> 
+                </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="BodyText"> 
+                        <div class="HeaderText">
+                            <a name="Fair">DSL Summer Fair</a>
+                        </div>
+                        <br>
+                        <div class="SubHeaderTextLarge">
+                            Families enjoyed face painting, balloon modelling, and Capoeira at this year’s summer fair.
+                        </div>
+                        <br>
+                        <div class="SubHeaderTextSmallItalic">
+                            By Andrea Ingrassia, a DSL parent
+                        </div>
+                        <br>
+                        <div class="StandardText">
+                            Dancers, performers and fire fighters joined DSL’s summer fair.
+                        </div>
+                        <br>
+                        <div class="StandardText">
+                            This year the fair was held at Peckham Rye Playroom on Sunday, 20 July. It was a wonderful 
+                            family event and helped the profile of the charity’s work in Peckham.
+                            <br>
+                            <br>
+                            Organized by DSL parents and supported by local businesses, organizations and individuals, 
+                            the fair represents a unique occasion for us parents to share with the community the amazing work that the charity is doing for our children. 
+                            And obviously it is a great chance to do some fundraising too.
+                        </div>
+                        <div class="formrow">
+                            <div class="formleftChildNews">
+                                <div class="StandardText">
+                                    <br>
+                                    The weather was good and it did not rain – at least not until the very end.
+                                    <br>
+                                    <br>
+                                    There were lots of activities and stalls such us face painting, balloon modelling, a bouncy castle, homemade food cooked by the parents, 
+                                    the tombola, a sale of nearly new toys and children’s clothes, a DJ set and music games for children, hook a duck, the Makaton Competition 
+                                    for parents with signing guru Mike Harris (Thank you Mike!) and a raffles with lots of prizes.          
+                                    <br>
+                                    <br>
+                                    We had some special guests who entertained all participants with group dancing and performances: Luigi from EOS Dance with dance music, Milly, 
+                                    Esther and Patrizia from Ann Bernadt CC with Zumba and Ramya from Ivydale CC with Capoeira. Thanks to them all.                                                                                            
+                                    <br>
+                                    <br>
+                                    And we also had a special visit from the local fire-fighters with a real fire engine! What a hit!
+                                    <br>
+                                    <br>
+                                    In total we raised an amazing £1,850. 
+                                    <br>
+                                    <br>
+                                    This is why we would like to thank all the people who made the Fair such a great success: Shelley and Kausar for face painting, 
+                                    Riccardo and Peppino the Djs, James the Balloon Master, Michelle for the help and support throughout the event, Ezref and his wife for the delicious cakes.
+                                    <br>
+                                    <br>
+                                    Thanks also to Ivydale Children’s Centre for the venue and the bouncy castle and to all parents and sponsors who donated prizes for the tombola and 
+                                    the raffle: Caterina, Pianna, Rosana, Sam, and Veronica from DSL, Michelle from EOS Dance, JoJo Maman Bebe, KuKi Air, AG Flower, Health Matters, 
+                                    Celestial, FC Sopers, and Cheese Block .                                                                                                                              
+                                    <br>
+                                    <br>                                      
+                                </div>
+                            </div>
+                            <div class="formrightChildNews">
+                                <br>
+                                <div class="PagesRightPhoto" style="background-image: url(&#39;../Photos/News/Fair.jpg&#39;)">
+                                    <div class="PagesRightPhotoLower"> Zumba Girls in Action </div>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="PagesRightPhoto" style="background-image: url(&#39;../Photos/News/Fair2.jpg&#39;)">
+                                    <div class="PagesRightPhotoLower"> Arts and Crafts
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="PagesRightPhoto" style="background-image: url(&#39;../Photos/News/Fair3.jpg&#39;)">
+                                    <div class="PagesRightPhotoLower"> Fire brigade in action </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="StandardText">
+                            And last but not least, thank you to all the DSL families who contributed to the event, 
+                            and all of you who came, making this day so special. We hope to see you all next year!
+                        </div> 
+                        <br>
+                        <br>
+                        <div class="HeaderText">
+                            <a name="SponsoredWalk">Sponsored walk</a>
+                        </div>
+                        <br>
+                        <div class="SubHeaderTextLarge">
+                            DSL parents raised £35,000 in a 21km sponsored walk.
+                        </div>
+                        <br>
+                        <div class="SubHeaderTextSmallItalic">
+                            By Mel Rosenvinge, a DSL parent
+                        </div>
+                        <br>
+                        <div class="StandardText">
+                            On Saturday 22nd of March 2014, to coincide with Down’s Awareness week, we organised a 21 kilometre walk along the Thames from Kingston-Upon-Thames to Putney Bridge. 
+                            <br>
+                            <br> 
+                            The distance was chosen as a tongue in cheek reference to chromosome 21, which children like my son Zac have three copies of.  More than 70 of us 
+                            took part in the walk and many more came to celebrate with us at the end. 
+                            <br>
+                            <br> 
+                            The walk began at the Swan Inn in Hampton Wick and passed the Langdon Down Museum, the home and institution developed by Dr John Langdon Down, 
+                            where a revolutionary and enlightened approach was developed for the care of people with learning disabilities, and ended at the Duke’s Head.
+                            <br>
+                            <br>
+                            <br>
+                            <div class="PagesCentrePhoto" style="background-image: url(&#39;../Photos/Pages/1.jpg&#39;)">
+                                <div class="PagesCentrePhotoLower"> Over 70 Walkers took part in the inagural DSL walk</div>
+                            </div>
+                            <br>
+                            <br>
+                            T-shirts and leaflets were produced for the day to publicise DSL and many people raised more awareness by highlighting the event on Facebook and signing up friends and colleagues as sponsors.
+                            <br>
+                            <br>
+                            It was a glorious spring day and the amount raised was staggering, but my greatest memory is of the wonderful sense of community.  
+                            <br>
+                            <br>
+                            It was truly empowering to see how many friends and family came along to support us and how generously people donated.  
+                            In fact it was such a success that we are planning another event next year.  Watch this space…
+                            <br>
+                            <br>
+                        </div>
+                        <br>
+                        <div class="HeaderText">
+                            <a name="Survey">DSL Parents Survey</a>
+                        </div>
+                        <br>
+                        <div class="SubHeaderTextLarge">
+                            Have your say about our services in Down’s South London’s Parental and Carers’ Survey.
+                        </div>
+                        <br>
+                        <div class="SubHeaderTextSmallItalic">
+                            By Zaza Curan, a DSL parent
+                        </div>
+                        <br>
+                        <div class="StandardText">
+                            Down’s South London is committed to continually improving the services it provides to children with 
+                            Down’s Syndrome and their parents and families. As part of our work to improve the therapies and the organisations, we conduct 
+                            an annual Parental and Carers’ Survey to get direct feedback on the impact the therapies are having on the children and families who attend the sessions.
+                        </div>
+                        <div class="formrow">
+                            <div class="formleftChildNews">
+                                <div class="StandardText">
+                                    <br>
+                                    Recent surveys have gathered valuable information on what parents feel they have gained from the DSL therapies, 
+                                    with 100% of respondents feeling that it’s a ‘specialist service’ and many supporting its ‘combined (holistic) therapy package‘ (92% of respondents). 
+                                    <br>
+                                    <br> 
+                                    The majority of parents and carers who responded to last year’s survey felt that their child had made ‘exceptional improvements in 
+                                    communication and levels of alertness’, with many saying there had been ‘significant improvements to their children’s physical strength and coordination’. 
+                                    <br>
+                                    <br> 
+                                    We have taken on board the areas where parents have seen less progress and the therapists have worked to build on the package 
+                                    available to children to ensure it gets better every year.
+                                    <br>
+                                    <br> 
+                                    We have had a good rate of response from parents and carers in the past – but this can always be improved so we are looking 
+                                    for an even better response rate this year!
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="formrightChildNewsLower">
+                                <br>
+                                <div class="PagesRightPhoto" style="background-image: url(&#39;../Photos/News/Survey1.jpg&#39;)">
+                                    <div class="PagesRightPhotoLower"> Group therapy session </div>
+                                </div>
+                                <br>
+                                <div class="PagesRightPhoto" style="background-image: url(&#39;../Photos/News/Survey2.jpg&#39;)">
+                                    <div class="PagesRightPhotoLower"> Visual stimulus learning </div>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="StandardText">
+                            <br>
+                            The next survey will be published shortly and we would like to ask all parents and carers whose children access the DSL therapies to take part by 14 November. 
+                            <br> 
+                            <br> 
+                            We take this survey very seriously – and our actions are only as good as the responses we get – so please take the time to complete it. 
+                            While we welcome feedback at any time, the survey is a very important way for us to find out what is working well for you and where things could be improved. 
+                            This is your chance to Have Your Say!
+                        </div> 
+                        <br>
+                        <br>
+                        <div class="HeaderText">
+                            <a name="LloydsVote">Loyds Vote Results</a>
+                        </div>
+                        <br>
+                        <div class="SubHeaderTextLarge">
+                            DSL narrowly missed out on first place in the Lloyds Community Fund ballot in October.
+                        </div>
+                        <br>
+                        <div class="SubHeaderTextSmallItalic">
+                            By Brendan O'Malley, a DSL parent
+                        </div>
+                        <br>
+                        <div class="StandardText">
+                            The Community Fund awards are allocated according to an online vote on which causes should be championed. DSL was shortlisted for a Community Fund award, 
+                            where the top allocation is £3,000. 
+                            <br>
+                            <br>
+                            After 1,923 votes cast for charities in Camberwell, DSL came second in Camberwell with 32.2% narrowly behind Ronald McDonald House (33.4%). 
+                            This means DSL has been awarded £2,000. ALD life came third (19.2%) and was awarded £1,000 and Southwark Young Carers came fourth (15.1%), awarded £500.
+                            <br>
+                            <br>
+                            Gun Akyuz, DSL chair, said: “A big thank you to all those who voted, tweeted and shared on Facebook with their family and friends.”
+                            <br>
+                            <br>
+                            The voting took place between 2 September and 10 October online, via Titter and SMS votes, as well as at Lloyds branches. 
+                            <br>
+                            <br>
+                            Nationally, during the public vote, nearly 1.5 million votes were cast across England, Wales, Northern Ireland, the Isle of Man 
+                            and the Channel Islands for some 1,400 good causes in 350 communities, giving them a chance to promote themselves and earn some funding.
+                            <br>
+                            <br>
+                        </div>
+                        <br>
+                   </div> 
+            </div>
+        </div>
+
+            <br>
+        </div>
+            <div class="footer"></div>     
+            <div class="footer2">
+                <div class="formrow">
+                    <div class="Footertablecontainer">
+                        <table>
+                            <tbody><tr>
+                                <td class="FooterTableSmall"><a href="http://www.downssouthlondon.org/Default.aspx" class="FooterLinks">&nbsp; Home</a></td>
+                                <td class="FooterTableBig"><a href="http://www.downssouthlondon.org/WhatWeDo.aspx" "="" class="FooterLinks">&nbsp; What we do</a></td>
+                                <td class="FooterTableBig"><a href="http://www.downssouthlondon.org/WhoWeAre.aspx" "="" class="FooterLinks">&nbsp; Who we are</a></td>
+                                <td class="FooterTableVeryBig"><a href="http://www.downssouthlondon.org/HowYouCanHelp.aspx" "="" class="FooterLinks">&nbsp; How you can help</a></td>
+                                <td class="FooterTableMedium"><a href="http://www.downssouthlondon.org/Resources.aspx" "="" class="FooterLinks">Resources&nbsp;</a></td>
+                                <td class="FooterTableVeryBig"><a href="http://www.downssouthlondon.org/Accountability.aspx" "="" class="FooterLinks">&nbsp; &nbsp; Accountability</a></td>
+                                <td class="FooterTable"><a href="http://www.downssouthlondon.org/ContactUs.aspx" "="" class="FooterLinks">Contact us</a></td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+             </div> 
+             <div class="footer4">
+                <div class="RegisteredCharity">Downs South London, Registered Charity 1123045.&nbsp;&nbsp;&nbsp;&nbsp; Registered company number: 6381649.</div>
+             </div>  
+             <div class="footer4">
+                <div class="RegisteredAddress"> 59 Lyndhurst Grove, London SE15 5AW. </div>
+             </div> 
+            <div class="footer4"></div> 
+    </form>
+
+
+</body></html>
