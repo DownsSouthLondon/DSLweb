@@ -13,7 +13,7 @@ body, html {width: 100%; font-family: "Myriad Web Pro", Helvetica, sans-serif; b
 .topbar{position:relative; background: #fffaf0; height: 155px; width: 1150px; margin:auto; border: 0px solid white; padding:0px 0px 0px 0px;}
 .logocontainer {position: absolute; top: 20px; left: 0%; background: #fffaf0; height: 104px; width: 300px; z-index: 3; padding-left: 5px; padding-right: 5px;}
 /*.logocontainerinner {position: relative; top: 0px;left: 0px;height: 104px;width: 300px; background:url('../images/DSLLogoColour2.jpg') center center no-repeat;}*/
-.logocontainerinner {position: relative; top: 0px;left: 14px;height: 103px;width: 304px; background:url('../images/Final DS logo.jpg') center center no-repeat;}
+.logocontainerinner {position: relative; top: 0px;left: 14px;height: 103px;width: 304px; background:url('../gfx/Final DS logo.jpg') center center no-repeat;}
 .Mission{position: absolute; top: 107px;left: 350px; height: 20px; width: 600px; color: #8c5c30; font-size:20px; font-weight:600;}
 .donatecontainer{position:absolute; top: 40px; right:1.0%; background: #c2e189; height: 52px; width: 160px; border-radius: 25px;}
 .donate{position:absolute; top:10px; left: 21px; background: #c2e189; color:#FFFAF0; font-weight:bold; font-size:29px;}
