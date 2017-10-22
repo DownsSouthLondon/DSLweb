@@ -116,7 +116,7 @@ body, html {width: 100%; font-family: "Myriad Web Pro", Helvetica, sans-serif; b
 .formrightTrustee{margin-left:305px;}
 
 .formleftNewsBlock{float: left; width: 88%; height: 70px; vertical-align:central; padding:5px 5px 5px 10px; }
-.formrightNewsBlock{margin-left:90%; width: 10%; height: 70px; background:url('../images/ArrowSmall.png') center center no-repeat; text-align:center;}
+.formrightNewsBlock{margin-left:90%; width: 10%; height: 70px; background:url(../gfx/ArrowSmall.png) center center no-repeat; text-align:center;}
 
 .formrowmain{display: block; height: 320px; }
 .formrowmainBottom{display: block; height: 370px; }
