@@ -1,69 +1,21 @@
 <!DOCTYPE html>
 <!-- saved from url=(0040)http://www.downssouthlondon.org/WhatWeDo -->
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./WhatWeDo_files/MainDS.css" rel="stylesheet" type="text/css"><link href="./WhatWeDo_files/js-image-slider.css" rel="stylesheet" type="text/css">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/MainDS.css" rel="stylesheet" type="text/css">
+    <link href="css/js-image-slider.css" rel="stylesheet" type="text/css">
 
+    <script id="facebook-jssdk" src="js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/js-image-slider.js" type="text/javascript"></script>
+    <script src="js/MainDS.js" type="text/javascript"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="js/mediaelementplayer.css">
+    <script src="js/custom.js"></script>
 
-    <script id="facebook-jssdk" src="./WhatWeDo_files/all.js"></script><script src="./WhatWeDo_files/jquery-1.10.2.js"></script>
-    <script src="./WhatWeDo_files/jquery-1.10.2.min.js"></script>
-    <script src="./WhatWeDo_files/js-image-slider.js" type="text/javascript"></script>
-    <script src="./WhatWeDo_files/MainDS.js" type="text/javascript"></script>
+    <title>DSL</title>
 
-    <script src="./WhatWeDo_files/jquery.js"></script>
-    <script src="./WhatWeDo_files/mediaelement-and-player.min.js"></script>
-    <link rel="stylesheet" href="./WhatWeDo_files/mediaelementplayer.css">
-    <script src="./WhatWeDo_files/custom.js"></script>
-
-
-    <title>
-	DSL
-</title>
-
-    <style type="text/css" media="screen"> </style>
-    <script type="text/javascript" src="./WhatWeDo_files/jquery-1.10.2.js"> </script>
-    <script type="text/javascript">
-        //function EditRecord(CRID) {
-        //    window.location = "editCR.aspx?ID=" + CRID
-        //}
-        $(document).ready(function () {
-            //$('#loading').hide();
-            //$('#loadingImg').hide();
-            //$('#bodyx').show();
-            //LoadDataThroughAjaxCall();
-            TimerTick();
-        });
-        function LoadDataThroughAjaxCall() {
-            $('#CRInfo').hide();
-            $('#loadingImg').show();
-            $.ajax({
-                type: "POST",
-                url: "Main.aspx/GetCRSummaryData",
-                data: '{}',
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                success: OnSuccess,
-                failure: OnFailure,
-                error: OnError
-            });
-            $('#CRInfo').show();
-            $('#loadingImg').hide();
-            return false;
-        }
-        function OnSuccess(msg) {
-            var message = msg.d;
-            document.getElementById("CRInfo").innerHTML = message
-        }
-        function OnFailure(response) {
-            alert('Failure!!!' + '<br/>' + response.reponseText);
-        }
-        function OnError(response) {
-            var errorText = response.responseText;
-            alert('Error!!!' + '\n\n' + errorText);
-        }
-        function CloseMe() {
-            window.open('', '_self', '');
-            window.close();
-        }
-     </script>
      <script type="text/javascript">
          var timerInterval = 10000; // 1 second
          var currentCount = 20000;
@@ -117,28 +69,28 @@
                     <nav>
                         <ul>                            
                             <li>
-                                <a href="http://www.downssouthlondon.org/Default.aspx">&nbsp; &nbsp; Home</a>
+                                <a href="index.html">&nbsp; &nbsp; Home</a>
                             </li>
                             <li>
-                                <a href="http://www.downssouthlondon.org/AboutDSL.aspx">About DSL</a>
+                                <a href="AboutDSL.html">About DSL</a>
                             </li>
                             <li>
-                                <a href="http://www.downssouthlondon.org/News.aspx">News</a>
+                                <a href="News.html">News</a>
                             </li>
                             <li>
-                                <a href="http://www.downssouthlondon.org/WhatWeDo.aspx">What we do</a>
+                                <a href="WhatWeDo.html">What we do</a>
                             </li>
                             <li>
-                                <a href="http://www.downssouthlondon.org/WhoWeAre.aspx">Who we are</a>
+                                <a href="WhoWeAre.html">Who we are</a>
                             </li>
                             <li>
-                                <a href="http://www.downssouthlondon.org/HowYouCanHelp.aspx">How you can help</a>
+                                <a href="HowYouCanHelp.html">How you can help</a>
                             </li>
                             <li>
-                                <a href="http://www.downssouthlondon.org/Resources.aspx">Further Reading</a>
+                                <a href="Resources.html">Further Reading</a>
                             </li>
-                            <li><a href="http://www.downssouthlondon.org/Accountability.aspx">Accountability</a></li>
-                            <li><a href="http://www.downssouthlondon.org/ContactUs.aspx">Contact us</a></li>
+                            <li><a href="Accountability.html">Accountability</a></li>
+                            <li><a href="ContactUs.html">Contact us</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -168,15 +120,15 @@
                 <div class="leftPageDivider">&nbsp; Friends of DSL</div>
                 <div class="leftPageDivider2"></div>
                 <div class="friendsOfDSLContainer">
-                    <div class="friendsOfDSLItem" style="background-image: url(&#39;../images/Sponsors/Daiwa.png&#39;)"></div>
+                    <div class="friendsOfDSLItem" style="background-image: url('gfx/Sponsors/Daiwa.png')"></div>
                     <div class="leftPageDivider3"></div>
-                    <div class="friendsOfDSLItemThin" style="background-image: url(&#39;../images/Sponsors/Lyceum.png&#39;)"></div>
+                    <div class="friendsOfDSLItemThin" style="background-image: url('gfx/Sponsors/Lyceum.png')"></div>
                     <div class="leftPageDivider3"></div>
-                    <div class="friendsOfDSLItem" style="background-image: url(&#39;../images/Sponsors/lloyds.png&#39;)"></div>
+                    <div class="friendsOfDSLItem" style="background-image: url('gfx/Sponsors/lloyds.png')"></div>
                     <div class="leftPageDivider3"></div>
-                    <div class="friendsOfDSLItemThin" style="background-image: url(&#39;../images/Sponsors/Chelsea2.png&#39;)"></div>
+                    <div class="friendsOfDSLItemThin" style="background-image: url('gfx/Sponsors/Chelsea2.png')"></div>
                     <div class="leftPageDivider3"></div>
-                    <div class="friendsOfDSLItemThin" style="background-image: url(&#39;../images/Sponsors/Rothschild.png&#39;)"></div>
+                    <div class="friendsOfDSLItemThin" style="background-image: url('gfx/Sponsors/Rothschild.png')"></div>
                 </div>
                 <div class="leftPageDivider2"></div>
                 <div class="facebookcontainer">
@@ -186,7 +138,7 @@
         </div>
         <div class="mainWhatWeDo formright">
             <div class="PlaceHolder">
-                <div class="TopPhotoWide" style="background-image: url(&#39;../Photos/Pages/4.jpg&#39;)">
+                <div class="TopPhotoWide" style="background-image: url('gfx/4.jpg')">
                     <div class="PhotOverlayText">What We Do...</div> 
                 </div>
                     <br>
@@ -215,7 +167,7 @@
                         </div> 
                         <br>
                         <br>
-                        <div class="PagesCentrePhoto" style="background-image: url(&#39;../Photos/WhatWeDo/Therapy1.jpg&#39;)">
+                        <div class="PagesCentrePhoto" style="background-image: url('gfx/Therapy1.jpg')">
                             <div class="PagesCentrePhotoLower"> One to one speach and laguage therapy</div>
                         </div>
                         <br>
@@ -247,7 +199,7 @@
                         </div> 
                         <br>
                         <br>
-                        <div class="PagesCentrePhoto" style="background-image: url(&#39;../Photos/WhatWeDo/Therapy2.JPG&#39;)">
+                        <div class="PagesCentrePhoto" style="background-image: url('gfx/Therapy2.JPG')">
                             <div class="PagesCentrePhotoLower"> Parents and childern participaating in therapy</div>
                         </div>
                         <br>
@@ -294,13 +246,13 @@
                     <div class="Footertablecontainer">
                         <table>
                             <tbody><tr>
-                                <td class="FooterTableSmall"><a href="http://www.downssouthlondon.org/Default.aspx" class="FooterLinks">&nbsp; Home</a></td>
-                                <td class="FooterTableBig"><a href="http://www.downssouthlondon.org/WhatWeDo.aspx" "="" class="FooterLinks">&nbsp; What we do</a></td>
-                                <td class="FooterTableBig"><a href="http://www.downssouthlondon.org/WhoWeAre.aspx" "="" class="FooterLinks">&nbsp; Who we are</a></td>
-                                <td class="FooterTableVeryBig"><a href="http://www.downssouthlondon.org/HowYouCanHelp.aspx" "="" class="FooterLinks">&nbsp; How you can help</a></td>
-                                <td class="FooterTableMedium"><a href="http://www.downssouthlondon.org/Resources.aspx" "="" class="FooterLinks">Resources&nbsp;</a></td>
-                                <td class="FooterTableVeryBig"><a href="http://www.downssouthlondon.org/Accountability.aspx" "="" class="FooterLinks">&nbsp; &nbsp; Accountability</a></td>
-                                <td class="FooterTable"><a href="http://www.downssouthlondon.org/ContactUs.aspx" "="" class="FooterLinks">Contact us</a></td>
+                                <td class="FooterTableSmall"><a href="index.html" class="FooterLinks">&nbsp; Home</a></td>
+                                <td class="FooterTableBig"><a href="WhatWeDo.html" class="FooterLinks">&nbsp; What we do</a></td>
+                                <td class="FooterTableBig"><a href="WhoWeAre.html" class="FooterLinks">&nbsp; Who we are</a></td>
+                                <td class="FooterTableVeryBig"><a href="HowYouCanHelp.html" class="FooterLinks">&nbsp; How you can help</a></td>
+                                <td class="FooterTableMedium"><a href="Resources.html" class="FooterLinks">Resources&nbsp;</a></td>
+                                <td class="FooterTableVeryBig"><a href="Accountability.html" class="FooterLinks">&nbsp; &nbsp; Accountability</a></td>
+                                <td class="FooterTable"><a href="ContactUs.html" class="FooterLinks">Contact us</a></td>
                             </tr>
                         </tbody></table>
                     </div>
