@@ -6,14 +6,6 @@
     document.getElementById('videomain').style.zIndex = 10;
 }
 
-(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
 function playVideo(xx) {
     document.getElementById('videomain').style.width = "270px";
     document.getElementById('videomain').style.height = "260px";
@@ -122,10 +114,10 @@ function HideEmail() {
 }
 
 function RotateImages() {
-    if (document.getElementById('1').style.backgroundImage == 'url("http://localhost:49417/images/VideoImages/1.png")') {
-        document.getElementById('1').style.backgroundImage = "url('http://localhost:49417/images/VideoImages/4.png')";
+    if (document.getElementById('1').style.backgroundImage == "url('../gfx/1.png')") {
+        document.getElementById('1').style.backgroundImage = "url('../gfx/4.png')";
     } else {
-        document.getElementById('1').style.backgroundImage = "url('http://localhost:49417/images/VideoImages/1.png')";
+        document.getElementById('1').style.backgroundImage = "url('../gfx/1.png')";
     };
 }
 
